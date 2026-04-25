@@ -1,7 +1,7 @@
 {
-  "name": "homebridge-gpio-device",
-  "version": "0.4.9",
-  "description": "Homebridge plugin exposing devices plugged on GPIO",
+  "name": "homebridge-gpio-device-automations",
+  "version": "1.0.0",
+  "description": "Homebridge plugin exposing devices plugged on GPIO plus automations",
   "main": "index.js",
   "scripts": {
     "prepublishOnly": "npm version patch --m 'Release %s'"
@@ -12,17 +12,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/dubocr/homebridge-gpio-device.git"
+    "url": "git://github.com/piotranonimowy/homebridge-gpio-device-automations.git"
   },
   "bugs": {
-    "url": "http://github.com/dubocr/homebridge-gpio-device/issues"
+    "url": "http://github.com/piotranonimowy/homebridge-gpio-device-automations/issues"
   },
   "engines": {
     "node": ">=0.12.0",
     "homebridge": ">=0.2.0"
   },
-  "homepage": "https://github.com/dubocr/homebridge-gpio-device#readme",
-  "author": "Romain DUBOC",
+  "homepage": "https://github.com/piotranonimowy/homebridge-gpio-device-automations#readme",
+  "author": "Romain DUBOC fork piotr to add automations",
   "license": "ISC",
   "dependencies": {
     "onoff": "~6.0.1"

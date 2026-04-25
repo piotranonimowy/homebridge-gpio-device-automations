@@ -337,8 +337,14 @@ function DigitalOutput(accesory, log, config) {
 		.on('set', this.setState.bind(this))
 		.on('get', this.getState.bind(this));
 
-	if (config.subType && config.type == 'Valve') {
-		var type = Characteristic.ValveType.GENERIC_VALVE;
+//	if (config.subType && config.type == 'Valve') {
+//		var type = Characteristic.ValveType.GENERIC_VALVE;
+
+// zmiany claude automations
+	if (config.type == 'Valve') {
+    service.getCharacteristic(Characteristic.IsConfigured)
+        .updateValue(Characteristic.IsConfigured.CONFIGURED);
+// zmiany claude automations end
 
 		if (this.duration != false) {
 			service.getCharacteristic(Characteristic.RemainingDuration).on('get', this.getRemainingDuration.bind(this));
