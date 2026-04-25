@@ -8,7 +8,8 @@
   },
   "keywords": [
     "homebridge-plugin",
-    "gpio"
+    "gpio",
+    "gpio-automations"
   ],
   "repository": {
     "type": "git",
